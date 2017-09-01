@@ -1,0 +1,19 @@
+* {
+    outline: none;
+}
+
+label {
+
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height : 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style:none;
+    border-radius: 4px;
+    color:white;
+    background-color : #506600;
+}

@@ -1,0 +1,9 @@
+<div> welcome {{ log_in }}
+    <form action="">
+    <label for="login">login</label>
+    <!--<input ng-model='log_in' name='login'>-->
+    <input [(ngModel)]="log_in" name='login'>
+    <label for="password">pass</label>
+    <input ng-bind-html='password' type='password'>
+    </form>
+</div>
