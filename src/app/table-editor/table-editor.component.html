@@ -1,0 +1,13 @@
+<div [ngClass]="{'table-editor': true, 'over':over}">
+  <form action="">
+    <div [ngClass]="{'table-form-container': true}">
+      <h3>Table n°</h3>
+      <span class="number">{{index}}</span>
+      <label for="plates">Nombre de couverts : </label>
+      <select name="tables" [formControl]="nbPlates">
+        <option *ngFor="let val of createArray(maxPlates)" [ngValue]="val+1" >{{val+1}}</option>
+      </select>
+      <button (click)="createTable(createPlates(nbPlates) , index ); changeButtonName();" (mouseover)="over = !over;" (mouseout)="over = !over;">{{buttonName}}</button>
+    </div>
+  </form>
+</div>

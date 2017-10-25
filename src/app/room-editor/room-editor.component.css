@@ -1,0 +1,18 @@
+.room-editor {
+  width: 100%;
+  margin:0 auto;
+  background-color: #2A2420;
+  color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  display:block;
+}
+.room-editor .select-tables{
+  text-align: center;
+}
+.tables-container {
+  width: 30%;
+  background-color: #7E5546;
+  margin: 10px auto;
+  padding: 20px;
+}

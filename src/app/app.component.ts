@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppLogin } from './app.login';
+import { RoomEditorComponent } from './room-editor/room-editor.component';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,10 @@ import { AppLogin } from './app.login';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+
   login: AppLogin;
-  
+  roomEditor: RoomEditorComponent;
  // login[]
-  //console.log(login['user']);
+// console.log(login['user']);
   title = 'RSM';
 }

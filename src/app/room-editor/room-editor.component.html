@@ -1,0 +1,17 @@
+<p> room-editor :</p>
+<div class="room-editor">
+  <div class="select-tables">
+    <label for="tables">Veuillez choisir un nombre de tables : </label>
+    <select name="tables" [formControl]="nbTables">
+      <option *ngFor="let val of createArray(50)" [ngValue]="val+1" >{{val+1}}</option>
+    </select>
+  </div>
+  <div class="select-max-plates">
+    <label for="maxPlatesPerTable">Maximum de couverts autorisé par table : </label>
+    <input type="number" min="1" name="maxPlatesPerTable" [formControl]="maxPpTable">
+  </div>
+  <div class="tables-container">
+    <app-table-editor *ngFor="let index of createTables(nbTables)" [index]="index+1" [maxPlates]="maxPpTable.value"></app-table-editor>
+  </div>
+  <app-table-svg></app-table-svg>
+</div>
